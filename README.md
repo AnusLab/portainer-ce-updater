@@ -10,7 +10,13 @@ A beautiful shell script that automatically updates Portainer CE to the latest v
 - 🚀 Error handling and status messages
 - 📝 Maintains all Portainer volumes and data
 
-## Usage
+## Quick Update (One Command)
+
+```bash
+curl -s https://raw.githubusercontent.com/AnusLab/portainer-ce-updater/main/update_portainer.sh | sudo bash
+```
+
+## Manual Installation
 
 1. Download the script:
 ```bash
@@ -36,8 +42,7 @@ sudo ./update_portainer.sh
 ## Access Portainer
 
 After running the script, Portainer will be available at:
-- HTTPS: `https://localhost:9443`
-- HTTP: `http://localhost:8000`
+- HTTPS: `https://<YOUR-SERVER-IP>:9443`
 
 ## License
 

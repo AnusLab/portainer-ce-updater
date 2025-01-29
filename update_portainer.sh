@@ -68,7 +68,9 @@ else
     exit 1
 fi
 
+# Get external IP address
+EXTERNAL_IP=$(curl -s ifconfig.me || hostname -I | awk '{print $1}')
+
 echo -e "\n${GREEN}${BOLD}✨ Portainer has been successfully updated!${NC}"
 echo -e "${BLUE}You can access Portainer at:${NC}"
-echo -e "🔒 HTTPS: ${BOLD}https://localhost:9443${NC}"
-echo -e "🌐 HTTP:  ${BOLD}http://localhost:8000${NC}\n" 
+echo -e "🔒 HTTPS: ${BOLD}https://${EXTERNAL_IP}:9443${NC}\n" 
