@@ -42,7 +42,8 @@ sudo ./update_portainer.sh
 ## Access Portainer
 
 After running the script, Portainer will be available at:
-- HTTPS: `https://<YOUR-SERVER-IP>:9443`
+- HTTPS (IPv4): `https://<YOUR-SERVER-IPV4>:9443`
+- HTTPS (IPv6): `https://[<YOUR-SERVER-IPV6>]:9443`
 
 ## License
 
