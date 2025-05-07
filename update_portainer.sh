@@ -122,7 +122,7 @@ echo -e "\n${BLUE}${BOLD}📡 Access Information${NC}"
 echo -e "${YELLOW}${SINGLE_LINE}${NC}"
 echo -e "${GREEN}🔒 HTTPS (IPv4):${NC} ${BOLD}https://${IPV4_ADDRESS}:9443${NC}"
 if [ ! -z "$IPV6_ADDRESS" ]; then
-    echo -e "${GREEN}🔒 HTTPS (IPv6):${NC} ${BOLD}https://[${IPV6_ADDRESS}]:9443${NC}"
+    echo -e "${GREEN}🔒 HTTPS (IPv6):${NC} ${BOLD}https://${IPV6_ADDRESS}:9443${NC}"
 fi
 
 # Thank you message
